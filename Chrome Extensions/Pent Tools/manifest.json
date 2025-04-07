@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Penetration Testing Tools",
+  "version": "1.0",
+  "description": "Multiple penetration testing utilities for web security testing.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest",
+    "webRequestBlocking",
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["openredirect.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["xss.txt"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

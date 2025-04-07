@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Security Tool</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 15px;
+      background: linear-gradient(135deg, #F9F5F2, #EDE9E6);
+      color: #3F3A36;
+      width: 600px;
+      min-height: 400px;
+      box-sizing: border-box;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 24px;
+      color: #E07A5F;
+      text-align: center;
+      margin: 0 0 15px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    #toolSelector {
+      width: 100%;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      border: 1px solid #D3CFC9;
+      border-radius: 6px;
+      background: #FFFFFF;
+      font-size: 14px;
+      color: #3F3A36;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+    #toolSelector:focus {
+      border-color: #E07A5F;
+    }
+    #scanButton {
+      width: 100%;
+      padding: 10px;
+      background: #E07A5F;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    #scanButton:hover {
+      background: #D96B4F;
+    }
+    #payloadList {
+      margin-top: 15px;
+      padding: 10px;
+      background: #FFFFFF;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      max-height: 400px;
+      overflow-y: auto;
+      overflow-x: auto;
+      word-wrap: break-word;
+    }
+    .payload {
+      padding: 8px 10px;
+      border-bottom: 1px solid #EDE9E6;
+      font-size: 13px;
+      color: #3F3A36;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .payload:last-child {
+      border-bottom: none;
+    }
+    .payload:hover {
+      background: #F9F5F2;
+    }
+    .payload.copied {
+      background: #E6F4E6;
+      color: #388E3C;
+    }
+    .header-category {
+      font-weight: 600;
+      color: #E07A5F;
+      padding: 10px;
+      background: #F9F5F2;
+      border-radius: 4px;
+      margin: 5px 0;
+    }
+    .vulnerable {
+      color: #D32F2F;
+      font-weight: 500;
+    }
+    .sensitive {
+      color: #F57C00;
+      font-weight: 500;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    th, td {
+      padding: 8px 10px;
+      text-align: left;
+      border-bottom: 1px solid #EDE9E6;
+    }
+    th {
+      background: #F9F5F2;
+      color: #E07A5F;
+      font-weight: 600;
+    }
+    tr:hover {
+      background: #F9F5F2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Security Tool</h1>
+  <select id="toolSelector">
+    <option value="xss">XSS Payload Viewer</option>
+    <option value="headers">Header Analyzer</option>
+    <option value="cookies">Cookie Analyzer</option>
+    <option value="httpmethods">HTTP Methods Scanner</option>
+    <option value="sqli">SQLi Scanner</option>
+    <option value="csrf">CSRF Scanner</option>
+  </select>
+  <button id="scanButton">Scan</button>
+  <div id="payloadList"></div>
+  <script src="headerAnalyzer.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

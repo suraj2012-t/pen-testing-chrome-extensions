@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pentest Scanner</title>
+  <style>
+    html, body {
+      width: 400px;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fff8e1;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+    #container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+      max-height: 400px;
+      overflow-y: auto;
+      border: 0.5px solid #ffb300;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      background: #fff8e1;
+      box-sizing: border-box;
+    }
+    .finding-section {
+      margin-bottom: 15px;
+    }
+    .finding-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff8e1;
+      border: 1px solid #ffb300;
+      border-radius: 8px;
+      padding: 8px;
+      margin: 2px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      word-break: break-all;
+    }
+    .finding-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    h3 {
+      margin: 5px 0;
+      color: #333;
+      font-family: monospace;
+    }
+    #url {
+      font-size: 14px;
+      color: #333;
+      font-family: monospace;
+      padding: 5px;
+      background: #fff8e1;
+      border-bottom: 1px solid #ffb300;
+      word-wrap: break-word;
+    }
+    button {
+      background: #ffb300;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #ffca28;
+    }
+    .file-path {
+      color: #ffb300;
+      text-decoration: underline;
+      cursor: pointer;
+      font-family: monospace;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    .file-path:hover {
+      color: #ffca28;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="url"></div>
+    <div id="results"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

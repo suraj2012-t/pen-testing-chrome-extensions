@@ -1,0 +1,55 @@
+/* Outer box settings */
+body {
+  background-color: #f5c789; /* Beige for outer box */
+  margin: 0;
+  padding: 0;
+  width: 150px;   /* Reduced overall width */
+  height: 100px;  /* Reduced overall height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner container with a subtle gradient border */
+.container {
+  padding: 6px;  /* Slightly reduced padding for a more compact look */
+  background: linear-gradient(#f5f5dc, #f5f5dc) padding-box,
+              linear-gradient(45deg, #ff9999, #99e6e6) border-box;
+  border: 1px solid transparent;
+  border-radius: 12px;  /* Increased border-radius for a smoother appearance */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 120px;  /* Reduced width for the inner box */
+}
+
+/* Proxy button styling */
+.proxy-btn {
+  background-color: #ff9999; /* Light coral for OFF state */
+  color: #ffffff;
+  border: none;
+  padding: 6px 16px;  /* Adjusted padding for a more compact button */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 15px; /* Smoother, less sharp corners */
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.3s ease; /* Smoother transition effects */
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button enabled state */
+.proxy-btn.enabled {
+  background-color: #99e6e6; /* Light teal for ON state */
+  color: #333333;          /* Darker text for contrast */
+}
+
+/* Hover effects */
+.proxy-btn:hover {
+  background-color: #ffb3b3; /* Lighter coral on hover (OFF) */
+  transform: scale(1.03);
+}
+
+.proxy-btn.enabled:hover {
+  background-color: #b3f0f0; /* Lighter teal on hover (ON) */
+}
